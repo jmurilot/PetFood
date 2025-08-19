@@ -12,7 +12,7 @@ html,body {
     letter-spacing: -0.03em;
 
 }
-
+input[type='number'],
 input[type='text'],
 input[type='email'],
 input[type='password'],
@@ -20,10 +20,12 @@ input[type='date'] {
     font-size: 15px;
 }
 
+input[type='number'],
 input[type='text'],
 input[type='email'],
 input[type='password'],
 input[type='date'],
+input[type='number']:disabled,
 input[type='text']:disabled,
 input[type='email']:disabled,
 input[type='password']:disabled,
@@ -45,6 +47,15 @@ input[type='date']:disabled {
 
 .btn {
     font-size: 15px;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:disabled,
+.btn-primary:active,
+.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 .btn-secondary,
